@@ -1,0 +1,28 @@
+.gInformation {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr;
+    grid-template-areas: "infoContainer tabsContainer";
+}
+
+.Convenios {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 1fr;
+    grid-template-areas: "cUniversidades1 cUniversidades2 ";
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: "tnosotros tnovedades tcontacto"
+        "nosotros novedades contacto";
+}
+
+.md-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+}

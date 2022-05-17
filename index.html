@@ -2,31 +2,357 @@
 <html>
 
 <head>
-   <link rel="stylesheet" href="diseño.css">
-    <link rel="icon" href="logo.png">
-    <title>CET | Centro de Estudios Trelew</title>
-</head>
-<body>
-    <header>
-      <nav id="menu">
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-          <li><a href="">Inicio</a></li>
-          <li><a class='dropdown-arrow' href="">Tecnicaturas Superiores</a>
-            <ul class='sub-menus'>
-                <li><a href="">Tecnicatura Superior En Turismo</a></li>
-                <li><a href="">Tecnicatura Superior En Radiología</a></li>
-                <li><a href="">Tecnicatura Superior en Análisis Químico Biológico</a></li>
-                <li><a href="">Tecnicatura Superior en Instrumentación Quirúrgica</a></li>
-              </ul> 
-         </li>
-          <li><a href="">Siglo 21</a></li>
-          <li><a href="">Carreras a Distancia</a></li>
-          <li><a href="">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-  </body>
 
-  </html>
+  <link rel="icon" href="assets\logo.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>CET | Centro de Estudios Trelew</title>
+</head>
+
+<body>
+  <!--menu-->
+  <header class="Navigation">
+
+    <!--menu-->
+    <div class="navbar">
+      <a href="./index.html"><img src="./assets/logomenu.png" alt="logo Cet" class="img-menu"></a>
+
+      <div class="dropdown menu-item">
+
+        <button class="dropbtn" onclick="myFunction()">Tecnicaturas Superiores
+          <i id="downico" class="fa-solid fa-angle-down"></i>
+        </button>
+
+        <div class="dropdown-content" id="myDropdown">
+          <a class="menu-item" href="#">Tecnicatura Superior en Radiologia</a>
+          <a class="menu-item" href="#">Tecnicatura Superior en Instrumentacion Quirúrgica</a>
+          <a class="menu-item" href="#">Tecnicatura Superior en Analisis Quimico Biológico</a>
+          <a class="menu-item" href="#">Tecnicatura Superior en Turismo</a>
+        </div>
+      </div>
+
+      <a class="menu-item" href="./SigloXXI.html">Siglo XXI</a>
+      <a class="menu-item" href="#news">Carreras a Distancia</a>
+      <a class="menu-item" href="#news">Contacto</a>
+
+    </div>
+    <!--hamburger ico-->
+
+
+  </header>
+  <!--galeria-->
+  <section class="carrousel">
+
+    <div class="gallery">
+
+      <div class="mySlides fade">
+        <img src="assets\slide1.jpg" alt="">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets\slide2.jpg" alt="">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="assets/slide3.jpg" alt="">
+      </div>
+
+    </div>
+
+  </section>
+  <!--informacion-->
+  <section class="gInformation">
+
+    <div class="infoContainer">
+
+      <div class="iContent">
+
+        <h1 class="title">Inscribete al Ciclo Lectivo 2022</h1>
+        <p class="subtitle">de Octubre a Febrero</p>
+        <ul class="items">
+
+          <li>Conoce el plan de estudios y alcances del titulo de tu carrera.</li>
+          <li>Completa el formulario on-line para iniciar el proceso de inscripcion.</li>
+          <li>Acercate AL CET personalmente para completar la inscripcion.</li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="tabsContainer">
+      <h1 class="title">Informate</h1>
+      <div class="tabs">
+
+        <button class="accordion">Planes de Estudio</button>
+        <div class="panel">
+          <div class="tabcontent">
+
+            <h1 class="Atitle">Conoce las Areas de Estudio dentro del CET</h1>
+            <ul class="Pestudio">
+              <li class="Pitem">
+                <a href="#" class="area">Área Paramédica</a>
+              </li>
+              <li class="Pitem">
+                <a href="#" class="area">Área Química</a>
+              </li>
+              <li class="Pitem">
+                <a href="#" class="area">Área de Turismo</a>
+              </li>
+
+            </ul>
+          </div>
+
+        </div>
+
+        <button class="accordion">Requisitos de Ingreso</button>
+        <div class="panel">
+          <div class="tabcontent">
+            <h1 class="Atitle">Conoce los requisitos para ingresar al CET </h1>
+            <ul class="Acet">
+              <li class="Pitem">
+                Fotocopia legalizada del certificado de estudios secundarios, anverso y reverso, o constancia de título
+                en
+                trámites.
+              </li>
+              <li class="Pitem">
+                Fotocopia legalizada de la partida de nacimiento o bien, fotocopia de la partida de nacimiento y
+                original
+                que podes
+                presentar en el instituto al momento de la inscripción para ser legalizada por el CET.
+              </li>
+              <li class="Pitem">
+                Fotocopia de la 1era y 2da hoja del DNI
+              </li>
+              <li class="Pitem">
+                Certificados de apto médico otorgados por autoridad sanitaria oficial competente
+              </li>
+              <li class="Pitem">Certificados de apto médico otorgados por autoridad sanitaria oficial competente</li>
+              <li class="Pitem">Certificado apto psicológico, otorgados por autoridad sanitaria oficial competente.</li>
+              <li class="Pitem">Dos fotos carnet.</li>
+
+            </ul>
+          </div>
+        </div>
+
+        <button class="accordion">Incripcion Online</button>
+        <div class="panel">
+          <div class="tabcontent">
+            <h1 class="Atitle">Completa el formulario</h1>
+            <p class="Ainformation">En el siguiente link encontraras un formulario en donde podras realizar tu
+              inscripcion
+              online, recorda tener presente los requisitos de ingreso y la documentacion para realizar la inscripcion
+              online
+            </p>
+            <br>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeV_25ZsFgwkPSh73hfz3oDkv2W5i7uhF2FtxbbkmWtM6tIuA/viewform"
+              target="_blank" class="Ainformationlink">Inscribete
+              Aqui</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <!--convenios-->
+  <section class="iConvenios">
+    <h1 class="title">CONVENIOS CON UNIVERSIDADES</h1>
+  </section>
+  <!--universidades-->
+  <section class="Convenios">
+
+    <div class=iContent">
+
+      <div class="imgContainer">
+        <img class="imgU" src="/assets/LOGOuai.png" alt="">
+      </div>
+
+      <div class="imgContainer">
+        <img class="imgU" src="/assets/quilmes.jpg" alt="">
+      </div>
+
+    </div>
+
+    <div class="iContent">
+
+      <div class="imgContainer">
+        <img class="imgU" src="/assets/rios.jpg" alt="">
+      </div>
+
+      <div class="imgContainer">
+        <img class="imgU" src="/assets/siglo21.jpg" alt="">
+      </div>
+
+    </div>
+
+  </section>
+  <!--btn conoce mas-->
+  <section class="iConveniosbtn">
+    <div class="masInformacion">
+      <button class="btnInformacion">Mas informacion</button>
+    </div>
+  </section>
+  <!--Preguntas Frecuentes-->
+  <section class="faqH1">
+    <h1 class="title">Preguntas Frecuentes</h1>
+  </section>
+
+  <section class="faq">
+
+    <div class="faqtabs">
+      <!--preguntas frecuentes-->
+      <button class="accordion">¿Las Carreras son presenciales o a Distancia?</button>
+      <div class="panel">
+        <p class="Ainformation">
+          Las Tecnicaturas Superiores en Radiología, Instrumentación Quirúrgica, Análisis Químico
+          Biológico y Turismo, son
+          totalmente presenciales, y se cursan en nuestras instalaciones. Cada carrera tiene su franja horaria, podés
+          consultarnos
+          los horarios.
+          Aclaración COVID-19: Por la ausencia de clases en el contexto de Pandemia, nuestras Tecnicaturas Superiores
+          presenciales
+          fueron adaptadas a herramientas a distancia y virtuales, pero una vez superada la situación sanitaria, se
+          volverá a un
+          dictado de clases tradicional presencial.
+          Por otro lado, contamos con diversos convenios para la oferta de educación a distancia: somos Centro de Apoyo
+          Universitario de la Universidades Siglo 21 (CAU), y tenemos convenios con la Universidad Abierta
+          Interamericana (UAI) y
+          la Universidad de Entre Ríos (UNER), de los cuales podés informarte en los contactos habilitados para ello.
+        </p>
+      </div>
+      <button class="accordion">¿Que validez tienen los titulos que otorgan?</button>
+      <div class="panel">
+        <p class="Ainformation">Las Tecnicaturas presenciales cuentan con títulos de validez nacional, esto quiere
+          decir, que son reconocidos
+          oficialmente por el Ministerio de Educación, y que además, los títulos habilitan a ejercer en cualquier parte
+          del
+          territorio nacional.</p>
+      </div>
+      <button class="accordion">¿Puedo incribirme si debo materias del secundario?</button>
+      <div class="panel">
+        <p class="Ainformation">El alumno que debe materias del secundario, puede inscribirse y comenzar a cursar, pero
+          tiene un plazo máximo hasta el
+          mes de Agosto para poder rendir las asignaturas pendientes. En caso de no hacerlo, no puede continuar. Lo
+          cursado y las
+          materias de las Tecnicatura en las que haya rendido y aprobado exámenes parciales, no se pierden y continúan
+          teniendo
+          validez si el alumno retoma una vez haya regularizado su situación y finalizado el nivel de Educación Media.
+        </p>
+      </div><button class="accordion">¿Cuando son las inscripciones y cuando comienzan las clases?</button>
+      <div class="panel">
+        <p class="Ainformation">Las fechas puntual de cada año se difunden próximo a cada instancia. Para el año 2022
+          las inscripciones serán de Octubre
+          2021 a Febrero 2022. Las clases comienzan, para el ciclo lectivo 2022, el 17 de Febrero con un curso
+          nivelatorio. Sin
+          embargo, es importante que te mantengas informado o nos consultes las fechas exactas al acercarse fin de año y
+          al
+          iniciar las actividades cada año, en Febrero.</p>
+      </div>
+      <button class="accordion">¿Cual es el valor de la cuota y como se abona?¿Todas las carreras valen lo
+        mismo?
+      </button>
+      <div class="panel">
+        <p class="Ainformation">
+          El valor de la cuota para las Tecnicaturas Superiores Presenciales se define cada año, próximo a iniciarse las
+          inscripciones a cada ciclo lectivo. Se abona una matrícula al inscribirte, (con beneficios si lo haces en
+          Diciembre), y
+          en Febrero del año que se inicia. Luego una cuota mensual, que se abona en 11 cuotas, de Febrero a Diciembre.
+          Contamos
+          con diversos métodos de pagos electrónicos, que podés consultarnos, así como el valor de las carreras, que
+          además, es el
+          mismo para todas las Tecnicaturas.
+        </p>
+      </div>
+      <button class="accordion">
+        ¿La cuota se abona siempre,incluso en vacaciones?
+      </button>
+      <div class="panel">
+        <p class="Ainformation">
+          La cuota mensual se abona siempre, incluido los meses de receso invernal. El valor total es el del año
+          académico, que se abona en las 11 cuotas antes mencionadas, de Febrero a Diciembre. Salvo situaciones de
+          fuerza mayor o que
+          ameriten una revisión, la cuota no deja de abonarse.
+        </p>
+      </div>
+      <button class="accordion">¿Puedo acceder a becas?</button>
+      <div class="panel">
+        <p class="Ainformation">
+          El CET no cuenta con ningún programa de becas propio, pero el estudiante puede asesorarse, postularse y
+          acceder a las
+          brindadas por los gobiernos provincial y nacional, así como las del Ministerio de Educación de Chubut.
+        </p>
+      </div>
+
+      <button class="accordion">Si estudie o soy egresada/o de otra institucion educativa,¿puedo solicitar
+        analisis de equivalencias?</button>
+      <div class="panel">
+        <p class="Ainformation">
+          La persona interesada en ingresar al CET podrá solicitar un análisis de equivalencias presentando la
+          documentación
+          respaldatoria debidamente legalizada. El otorgamiento quedará sujeto a la evaluación de la autoridad de cada
+          carrera.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+  <!--footer-->
+  <footer>
+
+    <div class="tNosotros">
+      <h1 class="fTitle">Nosotros</h1>
+    </div>
+
+    <div class="nosotros">
+
+      <ul class="fItemlist">
+        <li class="item">Nuestra Historia</li>
+        <li class="item">Autoridades y equipo de trabajo</li>
+        <li class="item">Mision,Vision y Valores</li>
+      </ul>
+
+    </div>
+
+    <div class="tNovedades">
+      <h1 class="fTitle">Novedades</h1>
+    </div>
+
+    <div class="novedades">
+      <ul class="fItemlist">
+        <li class="item">Nuestra Historia</li>
+        <li class="item">Autoridades y equipo de trabajo</li>
+        <li class="item">Mision,Vision y Valores</li>
+      </ul>
+    </div>
+
+    <div class="tContacto">
+      <h1 class="fTitle">Contacto</h1>
+    </div>
+
+    <div class="contacto">
+      <ul class="fItemlist">
+        <li class="item">Email:info@Cet.edu.ar</li>
+        <li class="item">Telefono:0280-4429456</li>
+        <li class="item">Telefono:0280-4433276</li>
+        <li class="item">Direccion:Carrasco 250,Trelew,Chubut</li>
+      </ul>
+    </div>
+
+
+  </footer>
+  <!--scripts-->
+  <script src="./main.js"></script>
+  <script src="./scripts.js"></script>
+
+</body>
+
+
+</html>

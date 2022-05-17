@@ -1,0 +1,441 @@
+/*
+primary color:#253b80
+secondary color:#336699
+selection color:#b5c4e1
+
+titulos:font-family: 'Koulen',
+cursive;
+normal text: font-family: 'Open Sans',
+sans-serif;
+
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+
+.img-menu {
+    height: auto;
+}
+
+.imgcet:hover {
+    background-color: #253b80;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #253b80;
+
+}
+
+.navbar a {
+    float: left;
+    font-size: 18px;
+    color: #f9f9f9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu-item {
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+
+}
+
+#downico {
+    margin-left: 5px;
+}
+
+.dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    margin: 0;
+    background-color: #253b80;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #253b80;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #336699;
+    color: #f9f9f9;
+}
+
+
+
+.carrousel {
+    width: 100%;
+    height: auto;
+}
+
+.carrousel img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.title {
+    color: #253b80;
+    font-family: 'Koulen',
+        cursive;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #336699;
+    font-size: 28px;
+    font-family: 'Open Sans',
+        sans-serif;
+    ;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.infoContainer {
+    grid-area: infoContainer;
+
+}
+
+.iContent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tabcontent {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    font-size: 20px;
+
+}
+
+.show {
+    display: block;
+}
+
+.Pestudio a {
+    text-decoration: none;
+    color: #343840;
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+.Acet {
+    color: #343840;
+    font-family: 'Open Sans',
+        sans-serif;
+    text-align: justify;
+    list-style-position: inside;
+    margin-bottom: 10px;
+}
+
+.Pestudio {
+    margin: 10px;
+}
+
+.panel {
+
+
+    background-color: white;
+    display: none;
+    overflow: hidden;
+
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.Atitle {
+    color: #253b80;
+    font-family: 'Koulen',
+        cursive;
+    font-size: 30px;
+    text-align: left;
+
+}
+
+
+
+.items {
+
+    list-style-position: inside;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 20px;
+    margin: 20px;
+    text-align: justify;
+    color: #343840;
+
+}
+
+.Ainformation {
+    font-family: 'Open Sans',
+        sans-serif;
+    color: #343840;
+    font-size: 18px;
+
+}
+
+.Ainformationlink {
+    margin: 20px;
+    color: #253b80;
+    text-decoration: none;
+    font-family: 'Open Sans',
+        sans-serif;
+    font-size: 20px;
+}
+
+.Ainformationlink:hover {
+    text-decoration: underline 2px #253b80;
+    color: #253b80;
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.imgU {
+    width: 70%;
+    cursor: pointer;
+
+}
+
+.masInformacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans',
+        sans-serif;
+}
+
+.btnInformacion:hover {
+    color: #f9f9f9;
+    background-color: #253b80;
+}
+
+.btn {
+    padding: 5px;
+    width: max-content;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    height: 50px;
+    font-size: 20px;
+    border: #253b80 solid 2px;
+    color: #343840;
+}
+
+.btn:hover {
+    color: #f9f9f9;
+    background-color: #253b80;
+}
+
+.btn a:hover {
+    color: #f9f9f9;
+
+}
+
+.btnInformacion {
+    cursor: pointer;
+    background-color: #f9f9f9;
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    border: #253b80 solid 2px;
+    color: #343840;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #253b80;
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Open Sans',
+        sans-serif;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: 0px 30px;
+}
+
+
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.active,
+.accordion:hover {
+    background-color: #253b80;
+    color: #f9f9f9;
+}
+
+
+.faq {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    margin: 20px;
+    text-align: justify;
+    width: 90%;
+}
+
+.tabsContainer {
+    grid-area: tabsContainer;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 3.5s;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #343840;
+
+}
+
+.tNosotros {
+    display: flex;
+    justify-content: center;
+    grid-area: tnosotros;
+}
+
+.tNovedades {
+    display: flex;
+    justify-content: center;
+    grid-area: tnovedades;
+}
+
+.tContacto {
+    display: flex;
+    justify-content: center;
+    grid-area: tcontacto;
+}
+
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+
+    grid-area: nosotros;
+}
+
+.novedades {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    grid-area: novedades
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 5px;
+
+    grid-area: contacto;
+}
+
+.fTitle {
+    color: #f9f9f9;
+    font-family: 'Koulen',
+        cursive;
+    font-size: 30px;
+}
+
+.fItemlist {
+    list-style: none;
+    font-family: 'Open Sans',
+        sans-serif;
+    cursor: pointer;
+    color: #f9f9f98f;
+
+}
+
+.md-c-r {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    text-align: justify;
+    margin-left: 10%;
+
+}
+
+.md-c-l {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    text-align: justify;
+    margin-left: 10%;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.gallery {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
