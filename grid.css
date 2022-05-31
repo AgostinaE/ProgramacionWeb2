@@ -26,3 +26,43 @@ footer {
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
 }
+
+.Uconvenios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "infobox1 infobox2"
+        "infobox3 infobox4";
+}
+
+
+
+.b1 {
+    grid-area: infobox2;
+}
+
+.b2 {
+    grid-area: infobox1;
+}
+
+.b3 {
+    grid-area: infobox3;
+}
+
+.b4 {
+    grid-area: infobox4;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "form map";
+}
+
+.tgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "Tinformation Plantabs";
+}

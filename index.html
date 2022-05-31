@@ -2,7 +2,6 @@
 <html>
 
 <head>
-
   <link rel="icon" href="assets\logo.png">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="./grid.css">
@@ -27,16 +26,19 @@
         </button>
 
         <div class="dropdown-content" id="myDropdown">
-          <a class="menu-item" href="#">Tecnicatura Superior en Radiologia</a>
-          <a class="menu-item" href="#">Tecnicatura Superior en Instrumentacion Quirúrgica</a>
-          <a class="menu-item" href="#">Tecnicatura Superior en Analisis Quimico Biológico</a>
-          <a class="menu-item" href="#">Tecnicatura Superior en Turismo</a>
+
+          <a class="menu-item" href="./radiologia.html">Tecnicatura Superior en Radiologia</a>
+          <a class="menu-item" href="./instrumentacion.html">Tecnicatura Superior en Instrumentacion
+            Quirúrgica</a>
+          <a class="menu-item" href="./analisis.html">Tecnicatura Superior en Analisis Quimico Biológico</a>
+          <a class="menu-item" href="./turismo.html">Tecnicatura Superior en Turismo</a>
+
         </div>
       </div>
 
       <a class="menu-item" href="./SigloXXI.html">Siglo XXI</a>
-      <a class="menu-item" href="#news">Carreras a Distancia</a>
-      <a class="menu-item" href="#news">Contacto</a>
+      <a class="menu-item" href="./distancia.html">Carreras a Distancia</a>
+      <a class="menu-item" href="./contacto.html">Contacto</a>
 
     </div>
     <!--hamburger ico-->
@@ -50,16 +52,29 @@
 
       <div class="mySlides fade">
         <img src="assets\slide1.jpg" alt="">
+        <div class="text">"No se trata de a donde vienes si no a donde vas"</div>
       </div>
 
       <div class="mySlides fade">
         <img src="assets\slide2.jpg" alt="">
+        <div class="text">"Carreras que abren las puertas al mundo profesional"</div>
       </div>
 
       <div class="mySlides fade">
         <img src="assets/slide3.jpg" alt="">
+        <div class="text">"Creemos que la educacion es para todos"</div>
       </div>
 
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <!--dots points-->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
 
   </section>
@@ -156,8 +171,6 @@
         </div>
 
       </div>
-
-
     </div>
 
   </section>
@@ -196,7 +209,8 @@
   <!--btn conoce mas-->
   <section class="iConveniosbtn">
     <div class="masInformacion">
-      <button class="btnInformacion">Mas informacion</button>
+      <button class="btn"> <a class="link" href="./distancia.html" target="_blank">Mas
+          informacion</a></button>
     </div>
   </section>
   <!--Preguntas Frecuentes-->

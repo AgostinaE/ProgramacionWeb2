@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="assets\logo.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contacto</title>
+</head>
+
+<body>
+    <!--menu-->
+    <header class="Navigation">
+
+        <!--menu-->
+        <div class="navbar">
+            <a href="./index.html"><img src="./assets/logomenu.png" alt="logo Cet" class="img-menu"></a>
+
+            <div class="dropdown menu-item">
+
+                <button class="dropbtn" onclick="myFunction()">Tecnicaturas Superiores
+                    <i id="downico" class="fa-solid fa-angle-down"></i>
+                </button>
+
+                <div class="dropdown-content" id="myDropdown">
+
+                    <a class="menu-item" href="./radiologia.html">Tecnicatura Superior en Radiologia</a>
+                    <a class="menu-item" href="./instrumentacion.html">Tecnicatura Superior en Instrumentacion
+                        Quirúrgica</a>
+                    <a class="menu-item" href="./analisis.html">Tecnicatura Superior en Analisis Quimico Biológico</a>
+                    <a class="menu-item" href="./turismo.html">Tecnicatura Superior en Turismo</a>
+
+                </div>
+            </div>
+
+            <a class="menu-item" href="./SigloXXI.html">Siglo XXI</a>
+            <a class="menu-item" href="./distancia.html">Carreras a Distancia</a>
+            <a class="menu-item" href="./contacto.html">Contacto</a>
+
+        </div>
+        <!--hamburger ico-->
+
+
+    </header>
+    <!--convenios universidades-->
+    <section class="intro">
+        <div class="itxt">
+            <h2 class="titlec">Contacto</h2>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="formcontainer">
+            <form action="">
+                <label for="fname">Nombre:</label>
+                <input type="text" id="fname" name="nombre" placeholder="Dinos tu nombre">
+                <label for="femail">Email:</label>
+                <input type="email" id="femail" name="email" placeholder="tu correo electronico">
+                <label for="subject">Asunto:</label>
+                <textarea name="asunto" id="fasunto" cols="25" rows="25" placeholder="Cuentanos como podemos ayudar">
+                </textarea>
+                <input class="btnform link" type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="mapcontainer">
+
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11623.360304588565!2d-65.3066256302246!3d-43.25477339999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbe0144cbc2476391%3A0xc5fcb6075ce49ad3!2sCET!5e0!3m2!1ses-419!2sco!4v1652909613416!5m2!1ses-419!2sco"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+
+        <div class="tNosotros">
+            <h1 class="fTitle">Nosotros</h1>
+        </div>
+
+        <div class="nosotros">
+
+            <ul class="fItemlist">
+                <li class="item">Nuestra Historia</li>
+                <li class="item">Autoridades y equipo de trabajo</li>
+                <li class="item">Mision,Vision y Valores</li>
+            </ul>
+
+        </div>
+
+        <div class="tNovedades">
+            <h1 class="fTitle">Novedades</h1>
+        </div>
+
+        <div class="novedades">
+            <ul class="fItemlist">
+                <li class="item">Nuestra Historia</li>
+                <li class="item">Autoridades y equipo de trabajo</li>
+                <li class="item">Mision,Vision y Valores</li>
+            </ul>
+        </div>
+
+        <div class="tContacto">
+            <h1 class="fTitle">Contacto</h1>
+        </div>
+
+        <div class="contacto">
+            <ul class="fItemlist">
+                <li class="item">Email:info@Cet.edu.ar</li>
+                <li class="item">Telefono:0280-4429456</li>
+                <li class="item">Telefono:0280-4433276</li>
+                <li class="item">Direccion:Carrasco 250,Trelew,Chubut</li>
+            </ul>
+        </div>
+
+
+    </footer>
+    <!--scripts-->
+    <script src="./main.js"></script>
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>
