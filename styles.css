@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
@@ -585,12 +584,12 @@ footer {
 }
 
 .btncon {
-    width: 90%;
+    width: 100%;
     margin-top: 5px;
     padding: 5px;
     cursor: pointer;
     margin-top: 30px;
-    height: 40px;
+    height: 50px;
     font-size: 20px;
     border: #253b80 solid 2px;
     color: #343840;
@@ -610,6 +609,11 @@ footer {
 .itxt {
     background-color: #343840;
 
+}
+
+textarea {
+    font-family: 'Open Sans',
+        sans-serif;
 }
 
 .titlec {
@@ -754,5 +758,12 @@ Tinformation {
     color: #253b80;
     font-size: 25px;
     margin-left: 25px;
+}
 
+.warnings {
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #343840;
+    padding-top: 20px;
 }
