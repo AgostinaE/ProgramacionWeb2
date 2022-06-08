@@ -9,7 +9,6 @@ correcto.style.margin = '20px';
 correcto.style.color = '#343840';
 function enviar() {
     let msjError = [];
-    let msjCorrecto = [];
     if (nombre.value === null || nombre.value === '') {
         msjError.push('Falta tu nombre');
     }
@@ -19,11 +18,14 @@ function enviar() {
     if (subject.value === null || subject.value === '') {
          msjError.push('Falta tu asunto');
     }
-    if (msjError.value === null
+    error.innerHTML = msjError.join(',')
+    return false;
+}
+function correcto(enviar()){
+    let msjCorrecto = [];
+    if (enviar === false)
         {
             msjCorrecto.push('El usuario de nombre '+ nombre + ' de correo '+ email + ' consulta sobre '+ subject);
-        })
-    error.innerHTML = msjError.join(',')
-    correcto.innerHTML = msjCorrecto.join(',')
-    return false;
+        }
+        correcto.innerHTML = msjCorrecto.join(',');
 }
