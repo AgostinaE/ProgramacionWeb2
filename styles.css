@@ -321,7 +321,7 @@
     font-size: 20px;
 }
 
-.btn {
+.btnForm {
     width: 200px;
     padding: 5px;
     width: max-content;
@@ -767,3 +767,54 @@ Tinformation {
     color: #343840;
     padding-top: 20px;
 }
+
+.failure-icon,
+  .error {
+    color: red;
+  }
+  
+  .success-icon {
+    color: green;
+  }
+  
+  .error {
+    font-size: 14.5px;
+    margin-top: 5px;
+  }
+  
+  .success-icon,
+  .failure-icon {
+    right: 0;
+    opacity: 0;
+   
+  }
+  
+.resultado {
+    visibility: hidden;
+  
+  }
+  
+  .resultado1 {
+    visibility: visible;
+    background-color: white;
+    font-size: small;
+    margin: 10px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid green;
+    padding: 10px 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  /*Formato de los validadores*/
+  .mostrarIco{
+    opacity: 1;
+  }
+  
+  .bordeVerde{
+    border: 2px solid green;
+  }
+  
+  .bordeRojo{
+    border: 2px solid red;
+  }
