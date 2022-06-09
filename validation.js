@@ -2,6 +2,7 @@ let nombre = document.getElementById("name");
 let email = document.getElementById("email");
 let subject = document.getElementById("subject");
 let error = document.getElementById("error")
+let formulario = document.getElementById("form")
 error.style.margin = '20px';
 error.style.color = '#343840'
 let correctEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -29,5 +30,6 @@ function enviar() {
         msjError.push(' envió un mensaje correctamente '+ subject.value);
     }
     error.innerHTML = msjError.join(',')
+    formulario.reset();
     return false;
 }
