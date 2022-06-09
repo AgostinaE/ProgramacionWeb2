@@ -42,11 +42,11 @@ function validar() {
     if (datos.asunto != "") {
         if ((datos.asunto != "") && (datos.asunto.length < 201)) {
             console.log(datos.asunto.length)
-            correcto(nombre, 0);
+            correcto(asunto, 1);
             cont++;
         } else {
-            error(nombre, 0);
-            nombre.focus();
+            error(asunto, 1);
+            asunto.focus();
         }
     } else {
         error(asunto, 1);
@@ -84,7 +84,7 @@ function error(elemento, posicion) {
         errorMensaje[posicion].innerHTML = "Error. Debe ingresar un nombre menor a 20 caracteres";
     } else if (posicion == 2) {
         errorMensaje[posicion].innerHTML = "Error. Falta el Asunto";
-    } else {
+    } else if (posicion == 1){
         errorMensaje[posicion].innerHTML = "Error. Debe ingresar una correo válido"
     }
 }
