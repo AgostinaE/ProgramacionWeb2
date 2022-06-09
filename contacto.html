@@ -52,8 +52,9 @@
         </div>
     </section>
     <section class="contact">
-        <div class="contenedor">
-            <form id="formulario">
+        <div class="formcontainer">
+            <form id="formulario" action="" method="POST">
+                <div class="form">
                 <!-- Entrada de Nombre-->
                 <div>
                     <label class="etiqueta">Nombre</label>
@@ -84,9 +85,10 @@
                 <div>
                     <button id="btnForm" class="btnForm" type="submit">Enviar</button>
                 </div>
+            </div>
             </form>
+            <div id="resultado" class="resultado"></div>
         </div>
-        <div id="resultado" class="resultado"></div>
         <div class="mapcontainer">
 
             <iframe class="map"
