@@ -52,29 +52,41 @@
         </div>
     </section>
     <section class="contact">
-        <div class="formcontainer">
-            <form action="" method="POST" id="form">
-                <div class="form">
-                    <div class="grupo">
-                        <label for="name">Nombre:</label>
-                        <input type="text" name="" id="name" placeholder="Nombre" required>
-                    </div>
-                    <div class="grupo">
-                        <label for="email">Email:</label>
-                        <input type="email" name="" id="email" placeholder="Correo electronico" required>
-                    </div>
-                    <div class="grupo">
-                        <label for="subject">Asunto:</label>
-                        <textarea name="" id="subject" cols="30" rows="10"
-                            placeholder="En que podemos ayudar"></textarea>
-                    </div>
-
-                    <button class="btn btncon" type="submit" onclick="return enviar()">Enviar</button>
-
+        <div class="contenedor">
+            <form id="formulario">
+                <!-- Entrada de Nombre-->
+                <div>
+                    <label class="etiqueta">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="salida">
+                    <!--Iconos-->
+                    <i class="fas fa-exclamation-circle failure-icon" id="incorrecto"></i>
+                    <i class="far fa-check-circle success-icon" id="correcto"></i>
+                    <div id="" class="error"></div>
+                </div>
+                <!-- Entrada de Correo-->
+                <div>
+                    <label class="etiqueta">Correo</label>
+                    <input type="email" name="correo" id="correo" class="salida">
+                    <!--Iconos-->
+                    <i class="fas fa-exclamation-circle failure-icon" id="incorrecto"></i>
+                    <i class="far fa-check-circle success-icon" id="correcto"></i>
+                    <div id="" class="error"></div>
+                </div>
+                <!-- Entrada de Asunto-->
+                <div>
+                    <label class="etiqueta">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" class="salida">
+                    <!--Iconos-->
+                    <i class="fas fa-exclamation-circle failure-icon" id="incorrecto"></i>
+                    <i class="far fa-check-circle success-icon" id="correcto"></i>
+                    <div id="" class="error"></div>
+                </div>
+                <div>
+                    <button id="btnForm" class="btnForm" type="submit">Enviar</button>
                 </div>
             </form>
-            <div id="error"></div>
         </div>
+        <div id="resultado" class="resultado"></div>
         <div class="mapcontainer">
 
             <iframe class="map"
