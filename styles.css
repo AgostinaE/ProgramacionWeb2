@@ -231,7 +231,23 @@
 .Pestudio {
     margin: 10px;
 }
-
+.resultado {
+    visibility: hidden;
+  
+  }
+  
+  .resultado1 {
+    visibility: visible;
+    background-color: white;
+    font-size: small;
+    margin: 10px auto;
+    max-width: 400px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid rgb(0, 23, 128);
+    padding: 10px 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
 .panel {
 
 
@@ -321,7 +337,7 @@
     font-size: 20px;
 }
 
-.btn {
+.btnForm {
     width: 200px;
     padding: 5px;
     width: max-content;
@@ -335,13 +351,37 @@
     -webkit-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
 }
-
-.btn:hover {
+i {
+    position: absolute;
+    padding: 10px;
+  }
+  
+  .failure-icon,
+  .error {
+    color: red;
+  }
+  
+  .success-icon {
+    color: green;
+  }
+  
+  .error {
+    font-size: 14.5px;
+    margin-top: 5px;
+  }
+  
+  .success-icon,
+  .failure-icon {
+    right: 0;
+    opacity: 0;
+   
+  }
+.boton:hover {
     color: #f9f9f9;
     background-color: #253b80;
 }
 
-.btn a:hover {
+.boton a:hover {
     color: #f9f9f9;
 
 }
@@ -355,7 +395,17 @@
     border: #253b80 solid 2px;
     color: #343840;
 }
-
+.mostrarIco{
+    opacity: 1;
+  }
+  
+  .bordeVerde{
+    border: 2px solid green;
+  }
+  
+  .bordeRojo{
+    border: 2px solid red;
+  }
 .accordion {
     background-color: #eee;
     color: #253b80;
